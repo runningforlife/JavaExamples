@@ -12,7 +12,9 @@ public class LazySingletonSafe {
 	public static LazySingletonSafe getInstance(){
 		if(sInstance == null){
 			synchronized(LazySingletonSafe.class){
-				sInstance = new LazySingletonSafe();
+				if(sInstance == null){
+					sInstance = new LazySingletonSafe();
+				}
 			}
 		}
 		
