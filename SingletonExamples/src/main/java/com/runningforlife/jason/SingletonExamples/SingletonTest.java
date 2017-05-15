@@ -37,6 +37,8 @@ public class SingletonTest
 			SingletonHolder s5 = SingletonHolder.getInstance();
 			checkNull(s5);
 			
+			EnumSingleton s6 = EnumSingleton.INSTANCE;
+			checkNull(s6);
 		}
     	
 		
