@@ -1,4 +1,4 @@
-package com.runningforlife.jason.NetworkExamples;
+package com.runningforlife.jason.network;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
